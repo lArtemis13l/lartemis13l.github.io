@@ -1,0 +1,197 @@
+﻿html {
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: hsl(0, 0%, 81%);
+}
+
+p {
+    opacity: 0.7;
+}
+
+h2, p {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 560px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+h2 {
+    margin-top: 10px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 600px;
+    top: 105px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.overlay-p {
+    margin-top: 50px;
+    position: relative;
+    z-index: 0;
+    /*top: 50px;*/
+}
+
+.circular-image {
+    border-radius: 50%;
+    margin: 15px 8px -20px 30px;
+}
+
+.quotations {
+    opacity: 0.9;
+    z-index: 0;
+    width: 102px;
+    height: 102px;
+}
+
+.quotations {
+    position: sticky;
+    margin-top: -75px;
+    margin-left: 530px;
+}
+
+.name-graduate {
+    position: relative;
+    margin-top: 0;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    opacity: 1;
+    display: inline-block;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.verified-graduate {
+    opacity: 0.5;
+    font-size: 1rem;
+    margin-left: 80px;
+    margin-top: 0;
+    flex: 1;
+}
+
+.testimonial {
+    /*flex-basis: 100%;*/
+    height: auto;
+    width: 350px;
+    margin: 20px;
+    border-radius: 7px;
+    padding: 20px 15px 15px 10px;
+}
+
+.testimonial-1 {
+    align-self: flex-start;
+    flex: 3 0 660px;
+    height: auto;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    /*height: 450px;*/
+    z-index: 0;
+}
+
+.testimonial-2 {
+    align-self: flex-start;
+    flex: 1 0 220px;
+    height: auto;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.testimonial-3 {
+    align-self: end;
+    justify-content: flex-start;
+    flex: 1 0 220px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial-4 {
+    align-self: end;
+    flex: 3 0 660px;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.testimonial-5 {
+    align-self: stretch;
+    justify-content: stretch;
+    flex: 1 0 245px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    padding-left: 10px;
+}
+
+
+@media (max-width: 1272px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-1 {
+        flex-direction: column;
+    }
+    
+    .container-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .quotations {
+        margin-top: -75px;
+        margin-left: 245px;
+    }
+    
+    .overlay {
+        width: 300px;
+    }
+    
+    .overlay-p {
+        position: relative;
+    }
+    
+    .testimonial {
+        align-self: center;
+        height: auto;
+        /*width: auto;*/
+    }
+    
+    .testimonial-1 {
+        flex-basis: 350px;
+    }
+    
+    .testimonial-4 {
+        flex-basis: 350px;
+    }
+    
+    .overlay-p {
+        margin-top: 100px;
+        /*height: auto;*/
+    }
+}
